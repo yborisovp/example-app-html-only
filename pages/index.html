@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Tourism, туризм, путешествия, road, forests, active,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/tooltip.css">
+    <link rel="stylesheet" href="../styles/searchbar.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tourism</title>
 </head>
 
@@ -28,9 +33,18 @@
                     <li><a href="#Video">Video</a></li>
                     <li class="with-dropdown"><a href="./login.html" aria-haspopup="true">Login</a>
                         <ul class="dropdown" aria-label="submenu">
-                            <li><a href="./registration.html">Register</a></li>
+                            <li><a href="./registration.html">Register</a>
+                            </li>
                         </ul>
+                    </li>
                 </ul>
+                <!--https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
@@ -138,8 +152,10 @@
 
     <div class="block4" id="Video">
         <div class="text__container">
-            <p class="block__title">
+            <!---https://www.w3schools.com/css/css_tooltip.asp-->
+            <p class="tooltip">
                 Lorem ipsum
+                <span class="tooltip__text">Lorem ipsum dolor sit.</span>
             </p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntlabore et
