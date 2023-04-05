@@ -21,24 +21,21 @@
 <body>
 
     <header class="header">
-        <nav>
+        <nav class="head-nav">
             <div class="nav-content">
                 <div class="logo">
-                    <a href="#">Tourism</a>
+                    <a href="./index.html">Tourism</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#Gallery">Galery</a></li>
-                    <li><a href="#AboutUs">About us</a></li>
-                    <li><a href="#Statistic">Statistic</a></li>
-                    <li><a href="#Video">Video</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li class="with-dropdown"><a href="./login.html" aria-haspopup="true">Login</a>
-                        <ul class="dropdown" aria-label="submenu">
-                            <li><a href="./registration.html">Register</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Account</button>
+                        <div class="dropdown-content">
+                            <a href="./login.html">Login</a>
+                            <a href="./registration.html">Registration</a>
+                        </div>
+                    </div>
                 </ul>
                 <!--https://www.w3schools.com/howto/howto_css_searchbar.asp-->
                 <div class="search-container">
@@ -116,7 +113,7 @@
     </div>
 
 
-    <div class="block3" id="Statistic">
+    <!--<div class="block3" id="Statistic">
         <div class="container">
             <h2 class="block3__title">
                 Statistics
@@ -150,41 +147,36 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="block4" id="Video">
+
+        <p class="block3__title">
+            Video
+        </p>
+        <div class="video">
+            <iframe width="900" height="512" src="https://www.youtube.com/embed/AGcTCvn-a6g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
         <div class="text__container">
             <!---https://www.w3schools.com/css/css_tooltip.asp-->
             <p class="tooltip">
-                Lorem ipsum
+                Tourism.
                 <span class="tooltip__text">Lorem ipsum dolor sit.</span>
             </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntlabore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi et dolore
-                magna aliqua.
-            </p>
         </div>
-        <div class="video">
-            <iframe width="900" height="512" src="https://www.youtube.com/embed/AGcTCvn-a6g"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <h2 class="end">
-            Thourism.
-        </h2>
     </div>
     <footer class="footer">
-        Все права защищены мной<br />
+        All rights reserved<br />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
         perferendis dolorem doloribus earum, ducimus officiis enim odit. Suscipit, earum. Ipsam maxime consectetur
         laudantium.
     </footer>
 
     <script src="../scripts/slider.js"></script>
-    <script src="../scripts/numCounting.js"></script>
-    <script src="../scripts/navMenu.js"></script>
+
 
 </body>
 

@@ -2,33 +2,64 @@
 <html lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/login.css">
-  <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/searchbar.css">
+    <title>Login</title>
 </head>
 
 <body>
-  <div class="login-form">
-    <form>
-      <h1>Login</h1>
-      <div class="content">
-        <div class="input-field">
-          <input type="email" placeholder="Email" autocomplete="nope">
-        </div>
-        <div class="input-field">
-          <input type="password" placeholder="Password" autocomplete="new-password">
-        </div>
-        <a href="#" class="link">Forgot Your Password?</a>
-      </div>
-      <div class="action">
-        <button><a href="./registration.html">Register</a></button>
-        <button>Sign in</button>
-      </div>
-    </form>
-  </div>
+    <header class="header">
+        <nav class="head-nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="./index.html">Tourism</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Account</button>
+                        <div class="dropdown-content">
+                            <a href="./login.html">Login</a>
+                            <a href="./registration.html">Registration</a>
+                        </div>
+                    </div>
+                </ul>
+                <!--https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-form">
+        <form>
+            <h1>Login</h1>
+            <div class="content">
+                <div class="input-field">
+                    <input type="email" placeholder="Email" autocomplete="nope">
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" autocomplete="new-password">
+                </div>
+                <a href="#" class="link">Forgot Your Password?</a>
+            </div>
+            <div class="action">
+                <button><a href="./registration.html">Register</a></button>
+                <button>Sign in</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
