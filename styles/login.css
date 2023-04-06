@@ -24,6 +24,7 @@ body {
 
 .login-form .content {
   padding   : 35px;
+  padding-bottom: 25px;
   text-align: center;
 }
 
@@ -148,3 +149,22 @@ select::-ms-expand {
   cursor          : pointer;
   line-height     : 1.1;
 }
+
+.license{
+    display:flex;
+    padding: 0 35px 25px 35px;
+}
+
+.license button{
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+    .license button:hover {
+        text-decoration: underline;
+    }
+
+    .license input {
+        margin:5px 3px 1px 4px;
+    }

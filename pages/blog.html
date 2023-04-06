@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/dropdown.css">
     <link rel="stylesheet" href="../styles/searchbar.css">
     <link rel="stylesheet" href="../styles/pagination.css">
+    <link rel="stylesheet" href="../styles/img-prev.css">
 
 
     <link rel="stylesheet" href="../styles/card.css">
@@ -34,6 +35,7 @@
                         <div class="dropdown-content">
                             <a href="./login.html">Login</a>
                             <a href="./registration.html">Registration</a>
+                            <a href="./user.html">User</a>
                         </div>
                     </div>
                 </ul>
@@ -204,7 +206,8 @@
                             perferendis dolorem doloribus earum, ducimus officiis enim odit.
                         </p>
                     </div>
-                </div><div class="card123 hiden">
+                </div>
+                <div class="card123 hiden">
                     <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
                     <div class="card__content">
                         <h4 class="card__title">Forest tour</h4>
@@ -223,24 +226,32 @@
                 </div>
             </ul>
             <nav class="pagination-container">
-                  <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
-                        &lt;
-                  </button>
+                <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                    &lt;
+                </button>
 
-                  <div id="pagination-numbers">
+                <div id="pagination-numbers">
 
-                  </div>
+                </div>
 
-                  <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
-                        &gt;
-                  </button>
+                <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                    &gt;
+                </button>
             </nav>
 
         </div>
         <div class="rightcolumn">
             <div class="card">
                 <h2>About Me</h2>
-                <img src="../img/man-img.jpg" class="about-img" alt="brown couch" />
+                <!--<img src="../img/man-img.jpg" class="about-img" alt="brown couch" />-->
+                <img id="about-img" src="../img/man-img.jpg" class="about-img" alt="Man">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
                     perferendis dolorem doloribus earum, ducimus officiis enim odit.
@@ -255,16 +266,25 @@
 
 
 
-    <div class="footer">
-        <footer class="footer">
-            All rights reserved<br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
-            perferendis dolorem doloribus earum, ducimus officiis enim odit. Suscipit, earum. Ipsam maxime consectetur
-            laudantium.
-        </footer>
-    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">
+                All rights reserved<br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                perferendis dolorem doloribus earum, ducimus officiis enim odit. Suscipit, earum. Ipsam maxime consectetur
+                laudantium.
+            </div>
+            <div class="footer-item">
+                All rights reserved<br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                perferendis dolorem doloribus earum, ducimus officiis enim odit. Suscipit, earum. Ipsam maxime consectetur
+                laudantium.
+            </div>
+        </div>
+    </footer>
 
     <script src="../scripts/pagination.js"></script>
+    <script src="../scripts/prev-picture.js"></script>
 </body>
 
 </html>

@@ -5,40 +5,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/user.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/searchbar.css">
+    <link rel="stylesheet" href="../styles/pagination.css">
+
+
+    <link rel="stylesheet" href="../styles/card.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>User page</title>
 </head>
 
 <body>
-    <div class="user-profile">
-        <div class="user-profile-fullname">ФИО</div>
-        <div class="user-profile-email">умаил</div>
-        <div class="user-profile-registration-date">дата регистрации</div>
-    </div>
-    <div class="user-blog">
-        <div class="card">
-            <a href="./card.html">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
-            </a>
+    <header class="header">
+        <nav class="head-nav">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="./index.html">Tourism</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Account</button>
+                        <div class="dropdown-content">
+                            <a href="./login.html">Login</a>
+                            <a href="./registration.html">Registration</a>
+                            <a href="./user.html">User</a>
+                        </div>
+                    </div>
+                </ul>
+                <!--https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- https://www.w3schools.com/howto/howto_css_blog_layout.asp -->
+    <div class="row">
+        <div class="leftcolumn">
+            <h2>My articles</h2>
+            <ul id="paginated-list" data-current-page="1" aria-live="polite">
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+                <div class="card123 hiden">
+                    <img src="../img/intro.jpg" class="card__image" alt="brown couch" />
+                    <div class="card__content">
+                        <h4 class="card__title">Forest tour</h4>
+                        <time datetime="2021-03-30" class="card__date">30 april 2023</time>
+                        <div calss="links">
+                            <a>#forest</a>
+                            <a>#tour</a>
+                            <a>#spring</a>
+                        </div>
+
+                        <p>
+                            123Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+                            perferendis dolorem doloribus earum, ducimus officiis enim odit.
+                        </p>
+                    </div>
+                </div>
+            </ul>
+            <nav class="pagination-container">
+                <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
+                    &lt;
+                </button>
+
+                <div id="pagination-numbers">
+
+                </div>
+
+                <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                    &gt;
+                </button>
+            </nav>
+
         </div>
-        <div class="card">
-            <a href="./card.html">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
-            </a>
+        <div class="rightcolumn">
+            <div class="card">
+                <img src="../img/man-img.jpg" class="about-img" alt="brown couch" />
+                <h3>
+                    Marcus John Smitt
+                </h3>
+                <p>
+                    24 years old
+                </p>
+            </div>
+            <div class="card">
+                <h3>Posted articles:</h3>
+                <p>23</p>
+                <h3>Last post:</h3>
+                <p>2 days ago</p>
+            </div>
         </div>
     </div>
+
+
+
+    <div class="footer">
+        <footer class="footer">
+            All rights reserved<br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur labore impedit neque ex qui illo
+            perferendis dolorem doloribus earum, ducimus officiis enim odit. Suscipit, earum. Ipsam maxime consectetur
+            laudantium.
+        </footer>
+    </div>
+
+    <script src="../scripts/pagination.js"></script>
 </body>
 
 </html>
